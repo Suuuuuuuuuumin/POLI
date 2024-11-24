@@ -1,0 +1,55 @@
+/* 기본 스타일 */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* 라이트모드 배경 */
+  color: #000000; /* 라이트모드 텍스트 */
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 다크모드 스타일 */
+body.dark-mode {
+  background-color: #333; /* 다크모드 배경 */
+  color: #ffffff; /* 다크모드 텍스트 */
+}
+
+/* 버튼 스타일 */
+.toggle-button {
+  /* position: fixed;
+  top: 20px;
+  right: 20px; */
+  height: 33px;
+  width: 40px;
+  border: 1px solid #fff;
+  margin-right: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.toggle-button.light {
+  background-color: #000000;
+  border: 1px solid #fff;
+
+  color: #ffffff;
+}
+
+.toggle-button.dark {
+  background-color: #ffffff;
+  border: 1px solid #fff;
+
+  color: #000000;
+}

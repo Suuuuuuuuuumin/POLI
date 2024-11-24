@@ -1,0 +1,27 @@
+/* Header 기본 스타일 */
+.headerOfApp {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .headerOfApp__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headerOfApp__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+  
