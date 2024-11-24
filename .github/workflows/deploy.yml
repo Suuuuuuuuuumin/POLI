@@ -33,11 +33,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: "npm"
       - name: Install dependencies
+        working-directory: ./frontend
         run: npm ci
       - name: Build
+        working-directory: ./frontend
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -45,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: "./dist"
+          path: ./frontend/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
